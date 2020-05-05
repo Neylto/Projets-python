@@ -24,7 +24,7 @@ if D > 0: # Si D plus grand que 0
   x2 = round((-b-sqrt(D))/(2*a),2) # Nous calculons x2
   print("La valeur de x2 est égal à", x2) # Nous affichons x2
     
-  print(f"La forme factorisable est :, {a},(x - {x1}=,)(x - {x2})") # Nous affichons la forme factorisé
+  print(f"La forme factorisable est :, {a},(x - {x1},)(x - {x2})") # Nous affichons la forme factorisé
 
 if D == 0: # Si D est égale à 0
   print("Sachant que le delta est égale à 0, l'équation à une racine unique") 
