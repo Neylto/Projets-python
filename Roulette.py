@@ -40,7 +40,7 @@ while Continuer: # Boucle permettant de relancer une partie
     Continuer = False # Termine la partie
   
   else: # Si il reste de l'argent sur le compte on demande au joueur s'il veut continuer
-    print(f"Votre solde est de : {Banque} ! ")
+    print(f"Votre solde est de : {Banque}€ ! ")
     Left = input("\nSouhaitez vous quitter ? o/n :")
     
     if Left == "o" or Left == "O": # Si il tape o alors la partie s'arrête
