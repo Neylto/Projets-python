@@ -10,10 +10,8 @@ while Continuer: # Boucle permettant de relancer une partie
     try:
       Mise = int(input("Combien souhaitez vous miser ? ")) # Somme misé
       Numero = int(input("Sur quel numéro vous souhaitez miser ?")) # Numéro sur lequel le joueur mise
-      if Numero > 49: # Sur une roulette les numéros vont de 0 à 49
+      if Numero > 49 or Mise > Banque: # Sur une roulette les numéros vont de 0 à 49 et la mise ne peut être plus grande que la solde en banque du joueur
         raise Exception
-      if Mise > Banque: # Lance une erreur si l'on mise plus que ce que l'on possède
-        raise Exception  
       break 
     except:
       print("La mise et le numéro joué doivent être des nombres entiers. La mise ne doit pas être plus grande que l'argent que vous avez en banque") # Message d'erreur
